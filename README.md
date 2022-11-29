@@ -4,10 +4,11 @@ This is a website of a company's financial details. Calculation of total months 
 Table of Contents
 Please see below.
 
-Installation
-Usage
-Credits
-License
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 Installation
 To access the website, please click the link below. 
 
@@ -21,3 +22,6 @@ Tutorial [www.w3schools.com]<br>
          [https://www.learn-js.org/]<br>
          [https://www.freecodecamp.org/]<br>
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
