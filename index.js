@@ -87,11 +87,12 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+// Total months //
 total_months = finances.length
 console.log("Total Months: ",total_months);
 
 
-// Total profit/Loss
+// Total profit/Loss //
 let total = 0
 for (let i = 0; i < finances.length; i++){
     total = total + finances[i][1]
@@ -100,7 +101,7 @@ for (let i = 0; i < finances.length; i++){
 console.log(`Total:  $${total}`);
 
 
-// Average change //
+// Average changes //
 total_change = 0
 diff = []
 for (let i = 1; i < finances.length; i++){
@@ -114,7 +115,7 @@ total_change += 867884;
 console.log(`Average: $${total_change / total_months}`);
 
 
-////////// Greatest profits  //////////
+// Greatest profits  //
 greatest_profits = []
 greatest_losses = []
 for (let i = 1; i < finances.length; i++){
@@ -136,7 +137,7 @@ for (let i = 0; i < greatest_profits.length; i++) {
     }
 }
 
-////////// Greatest profits  //////////
+// Greatest losses  //
 
 min = greatest_losses[0][1]
 min_index = 0
