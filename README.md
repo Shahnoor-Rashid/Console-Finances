@@ -1,14 +1,9 @@
 # Console-Finances
 Description
 This is a website of a company's financial details. Calculation of total months of income, total amount, average changes, greatest increase in profits and greatest decrease in losses.
-Table of Contents
-Please see below.
+.
 
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 Installation
 To access the website, please click the link below. 
 
