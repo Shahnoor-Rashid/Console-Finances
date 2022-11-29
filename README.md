@@ -12,6 +12,7 @@ Please see below.
 
 ## Installation
 To access the website, please click the link below. 
+[https://shahnoor-rashid.github.io/Console-Finances/]
 
 ## Usage
 When you visit the website, you can go to console by right click and choose inspect, the data will print in console.log
