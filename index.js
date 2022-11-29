@@ -90,29 +90,32 @@ var finances = [
 total_months = finances.length
 console.log("Total Months: ",total_months);
 
- 
- let total = 0
- for (let i = 0; i < finances.length; i++){
-     total = total + finances[i][1]
- }
+
+// Total profit/Loss
+let total = 0
+for (let i = 0; i < finances.length; i++){
+    total = total + finances[i][1]
+}
    
- console.log(`Total:  $${total}`);
+console.log(`Total:  $${total}`);
 
-//  Average changes //
 
- total_change = 0
- diff = []
- for (let i = 1; i < finances.length; i++){
-     d = finances[i][1] - finances[i - 1][1]
-     
-         diff.push(Math.abs(d))
- }
- for (let i = 0; i < diff.length; i++){
-     total_change = total_change + diff[i]
- }
- console.log(`Average: $${total_change / total_months}`);
+////////// Average changes  //////////
+total_change = 0
+diff = []
+for (let i = 1; i < finances.length; i++){
+    d = finances[i][1] - finances[i - 1][1]
+    if (d>0)
+        diff.push(Math.abs(d))
+}
+for (let i = 0; i < diff.length; i++){
+    total_change = total_change + diff[i]
+}
+console.log(`Average: $${total_change / total_months}`);
 
-//  Greatest Profits  //
+
+
+////////// Greatest profits  //////////
 greatest_profits = []
 greatest_losses = []
 for (let i = 1; i < finances.length; i++){
@@ -134,7 +137,7 @@ for (let i = 0; i < greatest_profits.length; i++) {
     }
 }
 
-// Greatest losses  //
+////////// Greatest profits  //////////
 
 min = greatest_losses[0][1]
 min_index = 0
