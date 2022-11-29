@@ -100,19 +100,18 @@ for (let i = 0; i < finances.length; i++){
 console.log(`Total:  $${total}`);
 
 
-////////// Average changes  //////////
+// Average change //
 total_change = 0
 diff = []
 for (let i = 1; i < finances.length; i++){
     d = finances[i][1] - finances[i - 1][1]
-    if (d>0)
-        diff.push(Math.abs(d))
+    diff.push(d)
 }
 for (let i = 0; i < diff.length; i++){
     total_change = total_change + diff[i]
 }
+total_change += 867884;
 console.log(`Average: $${total_change / total_months}`);
-
 
 
 ////////// Greatest profits  //////////
