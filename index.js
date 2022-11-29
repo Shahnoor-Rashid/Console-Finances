@@ -112,3 +112,37 @@ console.log("Total Months: ",total_months);
  }
  console.log(`Average: $${total_change / total_months}`);
 
+//  Greatest Profits  //
+greatest_profits = []
+greatest_losses = []
+for (let i = 1; i < finances.length; i++){
+    if (finances[i][1] > finances[i - 1][1]) {
+        greatest_profits.push([finances[i][0], finances[i][1] - finances[i - 1][1]])   
+    }
+    if (finances[i][1] < finances[i - 1][1]) {
+        greatest_losses.push([finances[i][0], finances[i][1] - finances[i - 1][1]])
+    }
+
+}
+
+max = greatest_profits[0][1]
+max_index = 0
+for (let i = 0; i < greatest_profits.length; i++) {
+    if (max < greatest_profits[i][1]) {
+        max = greatest_profits[i][1]
+        max_index = i
+    }
+}
+
+// Greatest losses  //
+
+min = greatest_losses[0][1]
+min_index = 0
+for (let i = 0; i < greatest_losses.length; i++){
+    if (min > greatest_losses[i][1]) {
+        min = greatest_losses[i][1]
+        min_index = i
+    }
+}
+console.log(`Greatest Increase in Profits: ${greatest_profits[max_index][0]} ($${max})`);
+console.log(`Greatest Decrease in Profits: ${greatest_losses[min_index][0]} ($${min})`);
