@@ -97,3 +97,18 @@ console.log("Total Months: ",total_months);
  }
    
  console.log(`Total:  $${total}`);
+
+//  Average changes //
+
+ total_change = 0
+ diff = []
+ for (let i = 1; i < finances.length; i++){
+     d = finances[i][1] - finances[i - 1][1]
+     
+         diff.push(Math.abs(d))
+ }
+ for (let i = 0; i < diff.length; i++){
+     total_change = total_change + diff[i]
+ }
+ console.log(`Average: $${total_change / total_months}`);
+
