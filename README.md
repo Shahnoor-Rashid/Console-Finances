@@ -21,4 +21,3 @@ Tutorial [www.w3schools.com]<br>
          [https://www.learn-js.org/]<br>
          [https://www.freecodecamp.org/]<br>
 
-Screenshots
